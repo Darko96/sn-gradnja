@@ -145,6 +145,12 @@ blockquote {
   position: relative;
 }
 
+@media (max-width: 991px) {
+  #infinite {
+    background-image: url(../img/infinite-loop-01-mobile.jpg);
+  }
+}
+
 @media (min-height: 600px) and (min-width: 1920px) {
   #infinite {
     background-size: cover;
