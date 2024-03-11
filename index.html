@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
   </head>
   <body>
-    <!-- Hero section -->
     <section id="infinite" class="text-white tm-font-big tm-parallax">
-      <!-- Navigation -->
       <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
         <div class="container">
           <div class="tm-next">
@@ -59,6 +57,7 @@
 
       <div class="text-center tm-hero-text-container">
         <div class="tm-hero-text-container-inner">
+          <img src="./img/logo-01.png" alt="sn gradnja" />
           <h2 class="tm-hero-title">SN Gradnja</h2>
           <p class="tm-hero-subtitle">Budite uvek na dobrom putu</p>
         </div>
@@ -74,7 +73,6 @@
     <section id="whatwedo" class="tm-section-pad-top">
       <div class="container">
         <div class="row tm-content-box">
-          <!-- first row -->
           <div class="col-lg-12 col-xl-12">
             <div class="tm-intro-text-container">
               <h2 class="tm-text-primary mb-4 tm-section-title">Naše usluge</h2>
@@ -91,10 +89,8 @@
             </div>
           </div>
         </div>
-        <!-- first row -->
 
         <div class="row tm-content-box">
-          <!-- second row -->
           <div class="col-lg-1">
             <i class="fas fa-3x fa-wrench text-center tm-icon"></i>
           </div>
@@ -131,10 +127,8 @@
             </div>
           </div>
         </div>
-        <!-- second row -->
 
         <div class="row tm-content-box">
-          <!-- third row -->
           <div class="col-lg-1">
             <i class="fas fa-3x fa-road text-center tm-icon"></i>
           </div>
@@ -175,7 +169,6 @@
             </div>
           </div>
         </div>
-        <!-- third row -->
       </div>
     </section>
 
@@ -207,7 +200,7 @@
                     alt="Image"
                     class="img-fluid mx-auto"
                   />
-                  <blockquote>Brza voda d.o.o.</blockquote>
+                  <blockquote>Izolinvest d.o.o.</blockquote>
                 </figure>
 
                 <figure class="tm-testimonial-item">
@@ -244,6 +237,15 @@
                     class="img-fluid mx-auto"
                   />
                   <blockquote>Carlsberg Srbija d.o.o.</blockquote>
+                </figure>
+
+                <figure class="tm-testimonial-item">
+                  <img
+                    src="img/testimonial-img-06.gif"
+                    alt="Image"
+                    class="img-fluid mx-auto"
+                  />
+                  <blockquote>Konvar d.o.o.</blockquote>
                 </figure>
               </div>
             </div>
@@ -360,7 +362,6 @@
       </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="tm-section-pad-top tm-parallax-2">
       <div class="container tm-container-contact">
         <div class="row">
@@ -452,7 +453,6 @@
             <div class="contact-item">&nbsp;</div>
           </div>
         </div>
-        <!-- row ending -->
       </div>
 
       <footer class="text-center small tm-footer">
@@ -497,13 +497,10 @@
         $object.css({ "background-position": bg_css });
       }
 
-      // Parallax function
-      // Adapted based on https://codepen.io/roborich/pen/wpAsm
       var background_image_parallax = function ($object, multiplier, forceSet) {
         multiplier = typeof multiplier !== "undefined" ? multiplier : 0.5;
         multiplier = 1 - multiplier;
         var $doc = $(document);
-        // $object.css({"background-attatchment" : "fixed"});
 
         if (forceSet) {
           setParallaxPosition($doc, multiplier, $object);
@@ -536,12 +533,10 @@
       };
 
       $(function () {
-        // Hero Section - Background Parallax
         background_image_parallax($(".tm-parallax"), 0.3, false);
         background_image_parallax_2($("#contact"), 0.8);
         background_image_parallax_2($("#testimonials"), 0.8);
 
-        // Handle window resize
         window.addEventListener(
           "resize",
           function () {
@@ -550,7 +545,6 @@
           true
         );
 
-        // Detect window scroll and update navbar
         $(window).scroll(function (e) {
           if ($(document).scrollTop() > 120) {
             $(".tm-navbar").addClass("scroll");
@@ -559,19 +553,15 @@
           }
         });
 
-        // Close mobile menu after click
         $("#tmNav a").on("click", function () {
           $(".navbar-collapse").removeClass("show");
         });
 
-        // Scroll to corresponding section with animation
         $("#tmNav").singlePageNav({
           easing: "easeInOutExpo",
           speed: 600,
         });
 
-        // Add smooth scrolling to all links
-        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
         $("a").on("click", function (event) {
           if (this.hash !== "") {
             event.preventDefault();
@@ -587,10 +577,9 @@
                 window.location.hash = hash;
               }
             );
-          } // End if
+          }
         });
 
-        // Pop up
         $(".tm-gallery").magnificPopup({
           delegate: "a",
           type: "image",
@@ -626,7 +615,6 @@
           ],
         });
 
-        // Gallery
         $(".tm-gallery").slick({
           dots: true,
           infinite: false,

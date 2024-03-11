@@ -10,7 +10,7 @@ body {
 }
 a {
   transition: all 0.3s ease;
-  color: #38b;
+  color: #707070;
 }
 
 a:hover,
@@ -47,7 +47,7 @@ blockquote {
 }
 
 .tm-text-primary {
-  color: #37a;
+  color: #707070;
 }
 
 .tm-font-big {
@@ -56,17 +56,15 @@ blockquote {
 
 .tm-btn-primary {
   color: white;
-  background-color: #369;
+  background-color: #707070;
   padding: 14px 30px;
 }
 
 .tm-btn-primary:hover,
 .tm-btn-primary:focus {
   color: white;
-  background-color: #38b;
+  background-color: #707070;
 }
-
-/* Navbar */
 
 .tm-navbar {
   position: fixed;
@@ -89,11 +87,11 @@ blockquote {
 
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
-  color: #38b;
+  color: #707070;
 }
 
 .tm-navbar.scroll .navbar-brand {
-  color: #369;
+  color: #707070;
 }
 
 .nav-item {
@@ -105,14 +103,14 @@ blockquote {
 }
 
 .tm-navbar.scroll .tm-nav-link {
-  color: #369;
+  color: #707070;
 }
 
 .tm-navbar.scroll .tm-nav-link:hover,
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
   color: #fff;
-  background-color: #369;
+  background-color: #707070;
 }
 
 .navbar-toggler {
@@ -133,8 +131,6 @@ blockquote {
 .tm-navbar.scroll .navbar-toggler-icon {
   color: #707070;
 }
-
-/* Hero */
 
 #infinite {
   background-color: #222;
@@ -227,7 +223,7 @@ blockquote {
 .tm-down-arrow {
   color: #fff;
   cursor: pointer;
-  background: #357;
+  background: #7b7b70;
   padding: 15px 40px;
   transition: all 0.3s ease;
 }
@@ -235,11 +231,10 @@ blockquote {
 .tm-down-arrow:hover,
 .tm-down-arrow:focus {
   color: #fff;
-  background: #37a;
+  background: #707070;
+
   padding: 20px 50px;
 }
-
-/* Introduction */
 
 #introduction {
   padding-bottom: 100px;
@@ -256,14 +251,13 @@ blockquote {
 
 .tm-icon {
   display: block;
-  color: #37a;
+  color: #31363f;
 }
 
 .tm-continue {
   padding: 20px 0 30px 0;
 }
 
-/* Testimonials */
 #testimonials {
   color: white;
   background-image: url(../img/infinite-loop-02.jpg);
@@ -319,12 +313,11 @@ blockquote {
   font-size: 1.1rem;
 }
 
-/* Work */
-
 .tm-section-desc {
   max-width: 650px;
   width: 100%;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .tm-gallery-container {
@@ -348,7 +341,7 @@ blockquote {
 .slick-dots li button:focus:before,
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  color: #3ba0dd;
+  color: #707070;
 }
 
 .tm-testimonials-carousel .slick-dots li button:before {
@@ -367,13 +360,11 @@ blockquote {
   font-size: 18px;
 }
 
-/* Hover Effect */
-/* Common style */
 .grid figure {
   position: relative;
   float: left;
   overflow: hidden;
-  background: #3085a3;
+  background: #787070;
   text-align: center;
   cursor: pointer;
 }
@@ -409,8 +400,6 @@ blockquote {
   height: 100%;
 }
 
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
 .grid figure figcaption > a {
   z-index: 1000;
   text-indent: 200%;
@@ -439,12 +428,8 @@ blockquote {
   font-size: 68.5%;
 }
 
-/*---------------*/
-/***** Honey *****/
-/*---------------*/
-
 figure.effect-honey {
-  background: #4a3753;
+  background: #707070;
   max-width: 220px;
 }
 
@@ -464,7 +449,7 @@ figure.effect-honey figcaption::before {
   left: 0;
   width: 100%;
   height: 10px;
-  background: #38c;
+  background: #31363f;
   content: "";
   -webkit-transform: translate3d(0, 10px, 0);
   transform: translate3d(0, 10px, 0);
@@ -508,8 +493,6 @@ figure.effect-honey:hover h2 i {
   padding-top: 30px;
 }
 
-/* Contact */
-
 #contact {
   color: white;
   background-color: #001828;
@@ -546,7 +529,7 @@ figure.effect-honey:hover h2 i {
 
 .item-link:hover i,
 .item-link:hover span {
-  color: #3496d8;
+  color: #707070;
 }
 
 .tm-input {
@@ -562,29 +545,26 @@ figure.effect-honey:hover h2 i {
 .tm-btn-submit {
   font-size: 0.9em;
   color: #fff;
-  background-color: #369;
+  background-color: #707070;
   width: 50%;
   margin-bottom: 60px;
 }
 
 .tm-btn-submit:hover {
   color: #fff;
-  background-color: #38b;
+  background-color: #707070;
 }
 
 ::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
-  opacity: 1; /* Firefox */
+  opacity: 1;
 }
 
 :-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
   color: white;
 }
 
 ::-ms-input-placeholder {
-  /* Microsoft Edge */
   color: white;
 }
 
@@ -601,7 +581,7 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-footer a:hover {
-  color: #9cf;
+  color: #707070;
 }
 
 .tm-footer-link {
@@ -610,7 +590,7 @@ figure.effect-honey:hover h2 i {
 
 .tm-footer-link:hover,
 .tm-footer-link:focus {
-  color: #38b;
+  color: #707070;
   text-decoration: none;
 }
 
